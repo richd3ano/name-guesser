@@ -2,61 +2,80 @@
 <html>
     <head>
         <title>Ask Jeeves - Name Guesser</title>
-        <style></style>
+        <link rel="stylesheet" type="text/css" href="../styles/style.css">
     </head>
 
     <body>
-        <h1>Ask Jeeves - Name Guesser</h1>
+        <header><h1>Ask Jeeves - Name Guesser</h1></header>
+        <div class= "welcome">
+            <h2>Welcome!</h2>
 
-        <p>Welcome to Jeeves' name guesser.</p>
+            <p>
+                Answer all of the questions as honestly as possible and hopefully we should guess your name. 
+            </p>
+            <p>
+                Don't worry, your answers are <strong>not</strong> stored.
+            <p>
+        </div>
+        
+        <div class= "questions">
+            <form action="/submit-answers">
+                
+                <div class="question-box">
+                    <div class="question-text">Gender?</div>
+                    <label class="container" for="female" class="left">
+                        <input id="female" type="radio" name="gender" value="female"> Female
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="male" class="right">
+                        <input id="male" type="radio" name="gender" value="male"> Male
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="question-box">
+                    <div class="question-text">Hair colour?</div>
+                    <label class="container" for="brunette">
+                        <input id="brunette" type="radio" name="hair-colour" value="brunette"> Brunette
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="blonde">
+                        <input id="blonde" type="radio" name="hair-colour" value="blonde"> Blonde
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="question-box">
+                    <div class="question-text">Eye colour?</div>
+                    <label class="container" for="blue">
+                        <input id="blue" type="radio" name="eye-colour" value="blue"> Blue
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="brown">
+                        <input id="brown" type="radio" name="eye-colour" value="brown"> Brown
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <div class="question-box">
+                    <div class="question-text">Ethnicity?</div>
+                    <label class="container" for="white">
+                        <input id="white" type="radio" name="ethnicity" value="white"> White
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="african">
+                        <input id="african" type="radio" name="ethnicity" value="african"> African
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="asian">
+                        <input id="asian" type="radio" name="ethnicity" value="asian"> Asian
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container" for="latino">
+                        <input id="latino" type="radio" name="ethnicity" value="latino"> Latino
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
 
-        <p>
-            Answer all of the questions as honestly as possible and hopefully we should guess your name. Don't worry, none of your answers are stored, there is an automatic response.
-        </p>
-
-        <form action="/submit-answers">
-            
-            <label for="female">
-                <input id="female" type="radio" name="gender" value="female"> Female
-            </label>
-            <label for="male">
-                <input id="male" type="radio" name="gender" value="male"> Male
-            </label>
-
-            <label for="brunette">
-                <input id="brunette" type="radio" name="hair-colour" value="brunette"> Brunette
-            </label>
-            <label for="blonde">
-                <input id="blonde" type="radio" name="hair-colour" value="blonde"> Blonde
-            </label>
-
-            <label for="blue">
-                <input id="blue" type="radio" name="eye-color" value="blue"> Blue
-            </label>
-            <label for="brown">
-                <input id="brown" type="radio" name="eye-colour" value="brown"> Brown
-            </label>
-
-            <label for="white">
-                <input id="white" type="radio" name="ethnicity" value="white"> White
-            </label>
-            <label for="african">
-                <input id="african" type="radio" name="ethnicity" value="african"> African
-            </label>
-            <label for="asian">
-                <input id="asian" type="radio" name="ethnicity" value="asian"> Asian
-            </label>
-            <label for="latino">
-                <input id="latino" type="radio" name="ethnicity" value="latino"> Latino
-            </label>
-
-
-
-
-
-            <label for="loving">
-                <input id="loving" type="checkbox" name="personality" value="loving" checked> Loving
-            </label>
+                
+            </div>
 
             <button type="submit">Submit</button>
         </form>
@@ -64,5 +83,3 @@
     </body>
 
 </html>
-
-<
